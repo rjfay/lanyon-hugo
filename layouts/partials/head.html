@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/css/syntax.css">
   <link rel="stylesheet" href="/css/lanyon.css">
   {{- if not .Site.Params.disableFonts }}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400" onload="this.rel='stylesheet'" />
   {{- end }}
   {{- range .Site.Params.customCSS }}
   <link rel="stylesheet" href="{{ . | relURL }}">
